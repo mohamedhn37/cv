@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root{
+    --col-init: #E9E8E6;
+    --col-second:#888888;
+    --col-red: #f44336;
+    --col-red-light: #f4dcdc;
+    --col-dark: #434343;
+    --col-dark-light: #747474;
+    --col-blue: #47AEFF;
+    --col-orange: #FFA76E;
+    --col-violet: #E80368;
+    --col-yellow: #FFBB2C;
+    --col-green: #11DBCF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/********header*******/
+header{
+    background-color: var(--col-init);
+}
+.first .nav-link{
+    color: var(--col-second);
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+.first .nav-link::before{   
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 7px;
+    background-color: var(--col-red);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out ;
+}
+.first .nav-link:hover{   
+    color: var(--col-dark);
+}
+.first .nav-link:hover::before, .first .active::before{   
+    visibility: visible;
+    width: 25px;
+}
+.social-media  .nav-link:hover{
+    color: var(--col-red);
+}
+/********header*******/
+/********main*******/
+/*****index****/
+.who-is-me{
+    background-image: url('img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.who-is-me .container .row{
+    padding-top: 100px;
+}
+.who-is-me .container .row h1{
+    font-size: 50px;
+}
+.who-is-me .container .row p{
+    color: var(--col-second);
+    font-size: 20px;
+}
+.who-is-me .container .row a{
+    background-color: var(--col-red);
+}
+/*****index****/
+/*****about****/
+.about .row h2,.skills .row h2,.facts .row h2,.testimonials .row h2,.resume .row h2,
+.contact .row h2,.service .row h2, .portfolio .row h2{
+    font-size: 35px;
+    color: var(--col-dark);
+}
+.about .row h2::after,.skills .row h2::after,.facts .row h2::after,.testimonials .row h2::after,
+.resume .row h2::after, .contact .row h2::after,.service .row h2::after,
+.portfolio .row h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--col-red);
+    top: 50px;
+    left: calc(50% - 25px);
+}
+.about .first-row p,.skills .first-row p,.facts .first-row p,.testimonials .first-row p,
+.resume .first-row p, .contact .first-row p, .service .first-row p,
+.portfolio .first-row p{
+    margin-top: 50px;
+    color: var(--col-dark-light);
+}
+.about .row ul li span{
+    font-weight: bold;
+    color: var(--col-dark);
+    font-size: 20px;
+}
+.skills .row .skill{
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: var(--col-dark);
+}
+.skills .row .skill span{
+    float: right;
+}
+.skills .row .progress .progress-bar{
+    background-color: var(--col-red);
+}
+.facts .stats h3{
+    color: var(--col-red);
+    font-weight: bold;
+    font-size: 40px;
+}
+.facts .stats p{
+    color: var(--col-dark-light);
+    font-size: 15px;
+}
+.testimonials .row img{
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+}
+.testimonials .row h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--col-dark);
+}
+.testimonials .row span{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--col-second);
+}
+.testimonials .row i{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--col-red);
+}
+.testimonials .row .carousel-item p{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--col-dark-light);
+}
+/*****about****/
+/*****Resume****/
+/*check-about-for-head*/
+.resume .row .sumary,.resume .row .education, .row .experience{
+    border-left: 2px solid var(--col-red);
+    padding-left: 20px;
+    position: relative;
+}
+.resume .row .sumary::before,.resume .row .education .first::before,
+.resume .row .education .second::before,.resume .row .experience .first::before,
+.resume .row .experience .second::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    background: #fff;
+    border: 2px solid var(--col-red);
+}
+.resume .row .sumary h4, .education h4, .experience h4{
+    color: var(--col-red);
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.resume .row .sumary p{
+    color: var(--col-dark);
+    font-style: italic;
+    font-size: 15px;
+}
+.resume .row .sumary ul li,.experience ul li{
+    line-height: 1.8rem;
+}
+.resume .row .education span,.experience span{
+    background-color: var(--col-red-light);
+    padding: 5px;
+    color: var(--col-red);
+}
+.resume .row .education h5,.experience h5{
+    margin-top: 12px;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+.resume .row .education p{
+    color: var(--col-dark-light);
+}
+/*****Resume****/
+/*****Service****/
+/*check-about-head*/
+.service .row .contents{
+    padding: 65px 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.service .row .icon-content{
+    position: relative;
+}
+.service .row .icon-content i{
+    position: absolute;
+    top: 35%;
+    right: 45%;
+    font-size: 30px;
+}
+.service .row .icon-content i:hover{
+    color: #fff;
+}
+.service .row .icon-content .one:hover{
+    color: var(--col-blue);
+}
+.service .row .icon-content .two:hover{
+    color: var(--col-orange);
+}
+.service .row .icon-content .tree:hover{
+    color: var(--col-violet);
+}
+.service .row .icon-content .four:hover{
+    color: var(--col-yellow);
+}
+.service .row .icon-content .five:hover{
+    color: var(--col-red);
+}
+.service .row .icon-content .sex:hover{
+    color: var(--col-green);
+}
+.service .row .contents .fa-basketball{
+    color: var(--col-blue);
+}
+.service .row .contents .fa-file-invoice{
+    color: var(--col-orange);
+}
+.service .row .contents .fa-gauge-simple-high{
+    color: var(--col-violet);
+}
+.service .row .contents .fa-layer-group{
+    color: var(--col-yellow);
+}
+.service .row .contents .fa-tv{
+    color: var(--col-red);
+}
+.service .row .contents .fa-archway{
+    color: var(--col-green);
+}
+.service .row .contents a{
+    text-decoration: none;
+    color: var(--col-dark);
+    font-weight: bold;
+    cursor: pointer;
+}
+/*****Service****/
+/*****Contact****/
+/*check-about-head*/
+.contact .content-infos .info i{
+    font-size: 20px;
+    color: var(--col-red);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--col-init);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .content-infos .info i:hover{
+    background: var(--col-red);
+    color: #fff;
+}
+.contact .content-infos .info h4{
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--col-dark);
+}
+.contact .content-infos .info p{
+    padding-left: 60px;
+    font-size: 15px;
+    color: var(--col-dark-light);
+}
+.contact form button{
+    background-color: var(--col-red);
+    padding: 10px 30px;
+    border: none;
+}
+/*****Contact****/
+/*****portfolio****/
+/*check-about-head*/
+/*****portfolio****/
+/********main*******/
+/********footer*******/
+footer{
+    background-color: var(--col-red);
+}
+footer i{
+    font-size: 30px;
+}
+/********footer*******/
