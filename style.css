@@ -222,27 +222,7 @@ header{
     right: 45%;
     font-size: 30px;
 }
-.service .row .icon-content i:hover{
-    color: #fff;
-}
-.service .row .icon-content .one:hover{
-    color: var(--col-blue);
-}
-.service .row .icon-content .two:hover{
-    color: var(--col-orange);
-}
-.service .row .icon-content .tree:hover{
-    color: var(--col-violet);
-}
-.service .row .icon-content .four:hover{
-    color: var(--col-yellow);
-}
-.service .row .icon-content .five:hover{
-    color: var(--col-red);
-}
-.service .row .icon-content .sex:hover{
-    color: var(--col-green);
-}
+
 .service .row .contents .fa-basketball{
     color: var(--col-blue);
 }
