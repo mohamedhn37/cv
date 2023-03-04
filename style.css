@@ -143,7 +143,7 @@ header{
     color: var(--col-second);
 }
 .testimonials .row i{
-    font-size: 45px;
+    font-size: 25px;
     font-weight: bold;
     color: var(--col-red);
 }
