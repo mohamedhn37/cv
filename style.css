@@ -18,6 +18,9 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+.d-none{
+    display: none;
+}
 /********header*******/
 header{
     background-color: var(--col-init);
@@ -287,6 +290,13 @@ header{
 /*****Contact****/
 /*****portfolio****/
 /*check-about-head*/
+.portfolio #full,#web,#mobile{
+    color: var(--col-red);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
 .card-body a{
     position: relative;
     border: none;
