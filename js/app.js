@@ -1,18 +1,21 @@
-$('#full').click(() => {
-    $('#webprojet').fadeOut();
-    $('#mobileprojet').fadeOut();
-    $('#fullproject').fadeIn();
-  });
-  
-  $('#web').click(() => {
-    $('#fullproject').fadeOut();
-    $('#mobileprojet').fadeOut();
-    $('#webprojet').fadeIn();
-  });
-  
-  $('#mobile').click(() => {
-    $('#fullproject').fadeOut();
-    $('#webprojet').fadeOut();
-    $('#mobileprojet').fadeIn();
-  });
-  
+$(document).ready(function() {
+    $('#full').click(()=> {
+        $('#fullproject').addClass('animate');
+        $('#mobileprojet').removeClass('d-none animate');
+        $('#webprojet').removeClass('d-none animate');
+    });
+    $('#web').click(()=> {
+        $('#fullproject').removeClass('animate');
+        $('#mobileprojet').addClass('d-none').removeClass('animate');
+        $('#webprojet').removeClass('d-none').addClass('animate');
+    });
+      
+    $('#mobile').click(()=> {
+        $('#fullproject').removeClass('animate');
+        $('#mobileprojet').removeClass('d-none').addClass('animate');
+        $('#webprojet').addClass('d-none').removeClass('animate');
+    });
+});
+
+
+
