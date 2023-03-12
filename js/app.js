@@ -1,21 +1,22 @@
 $(document).ready(function() {
-    $('#full').click(()=> {
-        $('#fullproject').addClass('animate');
-        $('#mobileprojet').removeClass('d-none animate');
-        $('#webprojet').removeClass('d-none animate');
+    $('#navbar-toggler').click(function(){
+        $('#navbarNav').addClass('d-none');
     });
-    $('#web').click(()=> {
-        $('#fullproject').removeClass('animate');
-        $('#mobileprojet').addClass('d-none').removeClass('animate');
-        $('#webprojet').removeClass('d-none').addClass('animate');
+
+    $('#full').click(function(){
+      $('#fullproject').addClass('animate');
+      $('#mobileprojet').removeClass('d-none animate');
+      $('#webprojet').removeClass('d-none animate');
     });
-      
-    $('#mobile').click(()=> {
-        $('#fullproject').removeClass('animate');
-        $('#mobileprojet').removeClass('d-none').addClass('animate');
-        $('#webprojet').addClass('d-none').removeClass('animate');
+    $('#web').click(function(){
+      $('#fullproject').removeClass('animate');
+      $('#mobileprojet').addClass('d-none').removeClass('animate');
+      $('#webprojet').removeClass('d-none').addClass('animate');
+    });
+    $('#mobile').click(function(){
+      $('#fullproject').removeClass('animate');
+      $('#mobileprojet').removeClass('d-none').addClass('animate');
+      $('#webprojet').addClass('d-none').removeClass('animate');
     });
 });
-
-
-
+  
